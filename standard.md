@@ -123,8 +123,12 @@ following line in the `<head>` of the document:
     <meta name="icon-set" content="SET-IDENTIFIER">
 
 The value for `SET-IDENTIFIER` MUST be a valid, case-sensitive folder name,
-that exists under `/.well-known/icons/`. If `SET-IDENTIFIER` is the empty
-value or a single dot, the default set MUST be used.
+that exists under `/.well-known/icons/`.
+If `SET-IDENTIFIER` is the empty value or a single U+002E dot, the default set
+MUST be used.
+Two U+002E dots in row MUST NOT appear.
+U+002F slashes MAY appear, if the resulting `SET-IDENTIFIER` is still a valid
+path under `/.well-known/icons/`.
 
 If the value for `SET-IDENTIFIER` contains characters, that are not valid in
 a URI, the client MUST use the percent-escaped UTF-8 encoded representation of
