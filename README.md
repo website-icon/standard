@@ -76,7 +76,7 @@ a file `index.txt`, that is a plain-text list of supported icons.
 
 Compiling such a list for sysadmins is as simple as running the command
 
-    find -type f > index.txt
+    find -type f,l -printf '%P\n' > index.txt
 
 in a shell in the `/.well-known/icons` folder.
 
