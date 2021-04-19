@@ -25,9 +25,10 @@ for a single developer to understand the technical details.
 Sitnik](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
 tried to boil down icon markup to the absolute minimum in order to support only
 the most popular devices.
-This is only marginaly similar to [Mathias
-Bynens’](https://mathiasbynens.be/notes/touch-icons) 10-year-old advice on
-what is needed.
+This is only marginally similar to what [Mathias
+Bynens’](https://mathiasbynens.be/notes/touch-icons) suggested 10 years ago on
+the same issue, with many changes rather subtle for people not into the
+research.
 And it is far from the humble beginnings of favicons, as [the W3C
 suggested](https://www.w3.org/2005/10/howto-favicon) in 2005.
 
