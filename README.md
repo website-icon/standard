@@ -26,7 +26,7 @@ Sitnik](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-tha
 tried to boil down icon markup to the absolute minimum in order to support only
 the most popular devices.
 This is only marginally similar to what [Mathias
-Bynens’](https://mathiasbynens.be/notes/touch-icons) suggested 10 years ago on
+Bynens](https://mathiasbynens.be/notes/touch-icons) suggested 10 years ago on
 the same issue, with many changes rather subtle for people not into the
 research.
 And it is far from the humble beginnings of favicons, as [the W3C
