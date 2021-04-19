@@ -82,8 +82,8 @@ A file ending in `.png` must be of type `image/png` and so on.
 https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types ?
 AFAICT IANA hosts no mapping of MIME type to extension.]
 
-If several names can be satisfied by the same content, a file with this content
-can be symlinked to all those names.
+If several names can be satisfied by the same content, a single file with this
+content MAY be symlinked or otherwise made available by all those names.
 
 ### Formal Syntax
 
@@ -208,7 +208,10 @@ changed:
     <meta name="icon-set" content="v3.2.0">
 
 The server can then be instructed to ignore such set prefixes when serving the
-request for `/.well-known/icons/v3.2.0/favicon.svg`.
+request for `/.well-known/icons/v3.2.0/favicon.svg` and instead serve the
+file under `/.well-known/icons/favicon.svg`.
+Icon sets used in this way resemble the use of so-called cache-busting strings
+in URLs.
 
 ### Dynamic Icons
 
