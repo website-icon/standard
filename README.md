@@ -75,11 +75,12 @@ How does a client find icons? In order not to fish in muddy waters and send
 requests for potentially hundreds of matching icon names the standard demands
 a file `index.txt`, that is a plain-text list of supported icons.
 
-Compiling such a list for sysadmins is as simple as running the command
+Such a list for sysadmins can be compiled rather quickly by running the command
 
-    find -type f,l -printf '%P\n' > index.txt
+    find -L . -type f -printf '%P\n' > index.txt
 
-in a shell in the `/.well-known/icons` folder.
+in a shell in the `/.well-known/icons` folder (on systems, that understand the
+`-printf` flag of `find`).
 
 ## How to change icons quickly?
 
