@@ -153,8 +153,10 @@ A user agent or other client MAY try to load a specific icon for a
 `VENDOR-PLATFORM[-SIZE].EXT` combination without looking up `index.txt` first,
 but MUST stop, if it finds no suitable candidate after three tries.
 
-Clients SHOULD (TODO: MUST?) follow HTTP redirects from URLs within the
-`/.well-known/icons/` folder.
+Clients MUST follow HTTP redirects from URLs within the
+`/.well-known/icons/` folder to URLs with the same origin.
+Clients SHOULD follow redirects to a resource with a different origin, if this
+resource is not deemed a security or privacy threat.
 
 If a client requests `/favicon.ico` from the docroot and is redirected to
 either `/.well-known/icons/favicon.svg` or `/.well-known/icons/favicon.ico`,
@@ -329,6 +331,13 @@ These features might be unnecessary when used in icons.
 Disabling them reduces attack surfaces by removing entry points for script
 execution, e.g. JavaScript in SVG, or timing attacks, e.g. by high-fidelity
 animation timing.
+
+If a server redirects an icon request to another origin, loading the redirected
+URL might expose details of the current user.
+Malicious actors could also try to exploit a bug in a specific user agent’s
+image handling by redirecting to a server under their control.
+User agents need to take care, that as little information as possible is handed
+on to the external icon server.
 
 ## References
 
