@@ -2,6 +2,7 @@
 # this is the list of icons currently supported by this website
 #
 favicon.svg
+icon-128.png
 icon-256.png
 index.txt
 icon.svg

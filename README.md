@@ -2,6 +2,8 @@
 
 [Read the proposed standard](standard.md)!
 
+[![An icon representing the website icon standard](icons/icon-128.png)](standard.md)
+
 ## Motivation for a website icon standard
 
 The world is rather used to favicons now, that they are part of the web for
