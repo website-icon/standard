@@ -102,6 +102,28 @@ In the HTML files you activate the set with a single line,
 This is all.
 Now your dev server reminds you reliably by means of a favicon.
 
+## Who are we?
+
+We are developers and designers who want to change the status quo of website
+icons. We want to make all our lives easier by adding opt-in conventions for
+the ever-expanding use of favicons.
+
+The standard was initiated by [Manuel Strehl](https://manuel-strehl.de).
+
+Come aboard! Make your opinion and experience heard by [opening a new
+issue](https://github.com/website-icon/standard/issues/new/choose) or [joining
+a discussion](https://github.com/website-icon/standard/discussions).
+
+### Websites that already support the website icon standard
+
+|---|------|
+| ![](https://hyperform.js.org/.well-known/icons/icon-144.png) | hyperform.js.org ([`index.txt`](https://hyperform.js.org/.well-known/icons/index.txt)) |
+| ![](https://manuel-strehl.de/.well-known/icons/icon-144.png) | manuel-strehl.de ([`index.txt`](https://manuel-strehl.de/.well-known/icons/index.txt)) |
+|---|-------|
+
+Add your site: Open an issue or send a pull request with the link to your
+website and to the icon.
+
 <!--
 https://css-tricks.com/favicon-quiz/
 https://stackoverflow.com/questions/48956465/favicon-standard-2021-svg-ico-png-and-dimensions
