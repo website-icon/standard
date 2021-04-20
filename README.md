@@ -116,10 +116,10 @@ a discussion](https://github.com/website-icon/standard/discussions).
 
 ### Websites that already support the website icon standard
 
-|---|------|
+| icon | website |
+| ---- | ------- |
 | ![](https://hyperform.js.org/.well-known/icons/icon-144.png) | hyperform.js.org ([`index.txt`](https://hyperform.js.org/.well-known/icons/index.txt)) |
 | ![](https://manuel-strehl.de/.well-known/icons/icon-144.png) | manuel-strehl.de ([`index.txt`](https://manuel-strehl.de/.well-known/icons/index.txt)) |
-|---|-------|
 
 Add your site: Open an issue or send a pull request with the link to your
 website and to the icon.
