@@ -53,8 +53,8 @@ The file names are relative to the `/.well-known/icons/` folder.
 * icons in a pixel-based image format are named `icon-SIZE.EXT`.
 * icons in a scaling image format are named `icon.EXT`.
 * a platform-specific icon is named `VENDOR-PLATFORM[-SIZE].EXT`.
-    The components `VENDOR`, `PLATFORM`, `SIZE` and `EXT` are defined in
-    registry [1] such that the possible combinations of `SIZE` and `EXT` for a
+    The components `VENDOR`, `PLATFORM`, `SIZE` and `EXT` are defined in the
+    registry such that the possible combinations of `SIZE` and `EXT` for a
     given `VENDOR`-`PLATFORM` set do not exceed 24.
 * the special values `default` and `icon` for the `VENDOR` component are
     reserved for future extensions.
@@ -71,9 +71,7 @@ In the case of square images the second part `"x" HEIGHT` MUST be omitted.
 
 File extensions MUST be representative of their content type.
 A file ending in `.png` must be of type `image/png` and so on.
-[TODO: What is a good normative reference?
-https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types ?
-AFAICT IANA hosts no mapping of MIME type to extension.]
+[TODO #3]
 
 If several names can be satisfied by the same content, a single file with this
 content MAY be symlinked or otherwise made available by all those names.
@@ -311,7 +309,32 @@ In this way both standards complement one another.
 
 ## Registering Vendor Tokens
 
-TBD.
+The registry of known token combinations for `VENDOR`, `PLATFORM`, `SIZE`, and
+`EXT` is located at [TODO #1].
+A new registration request can be issued by following the instructions on that
+page.
+
+A successful registration request MUST contain at least the following
+information: [TODO #2]
+
+* **contact address**: person or company who is registering and will be allowed
+    to request changes later on.
+* **`VENDOR`** token, that matches the syntax from the chapter Formal Syntax.
+* **`PLATFORM`** token, that matches the syntax from the chapter Formal Syntax.
+* supported **`EXT`** extensions.
+* if `EXT` contains size-dependent formats, supported **`SIZE`** parameters.
+    The number of possible `SIZE` and `EXT` combinations MUST NOT exceed 24.
+* any geometric restrictions or graphic alteration, that will be applied.
+    Examples are “will be rendered in a circle shape” or “will have a gloss
+    effect applied”.
+
+    Complex mask shapes MUST be given in the form of an SVG graphic, that can
+    be applied as mask.
+
+Additional information, like developer documentation or references, can be
+submitted.
+
+The registry will also contain the date of the registration request.
 
 ## Security Considerations
 
@@ -429,7 +452,3 @@ A third example uses the icon set feature:
 This structure offers one default favicon and three distinct icon sets `tulips`,
 `roses`, and `hyacinths`.
 Each set is in itself a complete implementation of the website icon standard.
-
-----
-
-[1] The registry is yet to be created.
