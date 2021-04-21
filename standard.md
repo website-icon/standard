@@ -43,15 +43,9 @@ resource.
 Website icons are located in the `/.well-known/icons` folder in the docroot of
 a web server.
 
-Differing icon sets can be bundled in sub-folders.
-For example, a set of icons for a photo gallery page can reside in
-`/.well-known/icons/gallery/`.
-
 ### Conventions for File Names
 
 The file names are relative to the `/.well-known/icons/` folder.
-In the case of icon sets the file names are relative to the sub-folder of
-`/.well-known/icons/` with the same name as the set.
 
 * the default favicon in the format SVG is named `favicon.svg`.
 * the default favicon in the format ICO for backwards compatibility is named
@@ -66,8 +60,7 @@ In the case of icon sets the file names are relative to the sub-folder of
     reserved for future extensions.
 * the plain-text list of available icons is named `index.txt`.
     Every line in this file that doesn’t start with the character `#`
-    represents a URL with base `/.well-known/icons/`. An `index.txt` in a
-    sub-folder references its icons relative to itself.
+    represents a URL with base `/.well-known/icons/`.
 * the server MAY provide an `index.html` file with human-readable information
     about the icons.
 * the folder MAY contain other files, provided that their file names do
@@ -115,10 +108,22 @@ HEIGHT = 1*DIGIT
 `ALPHA` and `DIGIT` match the respective rules from [RFC
 5234](https://tools.ietf.org/html/rfc5234).
 
+## Icon Sets
+
+Icon sets differing from the default set are bundled in sub-folders.
+The file names as specified above are relative to the sub-folder inside
+`/.well-known/icons/` with the same name as the set.
+
+For example, a set of icons for a photo gallery page can reside in
+`/.well-known/icons/gallery/`. The icon set is named `gallery`.
+
+Every icon set folder MUST at least contain its own `index.txt` file with URLs
+relative to itself and either a `favicon.svg` or `favicon.ico` image.
+
 ### Choosing a Set
 
-An HTML page can choose to select a different set of icons by using the
-following line in the `<head>` of the document:
+An HTML page can choose to select an icon set by using the following line in
+the `<head>` of the document:
 
     <meta name="icon-set" content="SET-IDENTIFIER">
 
