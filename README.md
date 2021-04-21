@@ -115,7 +115,7 @@ That’s it. Now you support the standard while being 100% backwards-compatible.
 If you cannot do step 3 in your setup, you can add the following line in your
 HTML files for the same effect:
 
-    <link rel="shortcode icon" href="/.well-known/icons/favicon.ico">
+    <link rel="shortcut icon" href="/.well-known/icons/favicon.ico">
 
 ## How to change icons quickly?
 
