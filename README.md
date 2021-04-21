@@ -90,6 +90,33 @@ Such a list can be compiled rather quickly by sysadmins by running the command
 in a shell in the `/.well-known/icons` folder (on systems, that understand the
 `-printf` flag of `find`).
 
+## Quick start: How do I support the standard?
+
+If you have an existing `favicon.ico` file, all you need to do are three little
+things:
+
+1. Move the file:
+
+        mkdir -p .well-known/icons/
+        mv favicon.ico .well-known/icons/
+
+2. Create the index file:
+
+        echo "favicon.ico" > .well-known/icons/index.txt
+
+3. Redirect requests from `/favicon.ico`. Example code for Apache `.htaccess`
+   files:
+
+        RewriteEngine On
+        RewriteRule ^favicon.ico /.well-known/icons/favicon.ico [L]
+
+That’s it. Now you support the standard while being 100% backwards-compatible.
+
+If you cannot do step 3 in your setup, you can add the following line in your
+HTML files for the same effect:
+
+    <link rel="shortcode icon" href="/.well-known/icons/favicon.ico">
+
 ## How to change icons quickly?
 
 This is something the standard also strives to make as painless as possible.
