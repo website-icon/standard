@@ -1,6 +1,6 @@
 # Website Icon Standard
 
-_Version: 0.0.1, 2021-04-07_
+_Version: 0.0.1, 2021-04-21_
 
 Authors:
 
