@@ -6,7 +6,7 @@
 
 ## Motivation for a website icon standard
 
-The world is rather used to favicons now, that they are part of the web for
+The world is rather used to **favicons** now, that they are part of the web for
 over 20 years.
 While the good old favicon.ico itself can be used with no additional
 configuration by placing it in the docroot of a web server, the same is not
@@ -34,14 +34,14 @@ research.
 And it is far from the humble beginnings of favicons, as [the W3C
 suggested](https://www.w3.org/2005/10/howto-favicon) in 2005.
 
-In a nutshell, it’s a mess.
+In a nutshell, **it’s a mess**.
 
 In this situation Jeff Starr presents the need for a favicon standard
 eloquently in a [blog post](https://perishablepress.com/favicon-standard/).
 This was the starting point for creating this proposed standard.
 
-The target is to get back to the sweet spot between configuration and
-convention, where the most common cases can be handled with zero extra
+The target is to get back to the sweet spot between **configuration and
+convention**, where the most common cases can be handled with zero extra
 markup.
 
 Therefore we piggyback on RFC 8615, that standardizes the `/.well-known/`
@@ -50,7 +50,7 @@ folder as something, that hosts files by convention.
 ## How does it work?
 
 The basic idea is simple: If a vendor needs a specifically sized icon for their
-platform, they register a name for it.
+platform, they **register a name** for it.
 This registry serves as central place to find out, which icons we need.
 
 For example, imagine PearGlyph Inc. introduces a new device, the TouchMagic
@@ -64,7 +64,7 @@ icon names:
 If we want to support the TouchMagic device, we put an icon with such a name
 in the folder `/.well-known/icons/` in our docroot.
 
-The standard adds a short list of default icon names, too.
+The standard adds a short list of **default icon names**, too.
 Most prominently, it introduces
 
     /.well-known/icons/favicon.svg
@@ -73,11 +73,17 @@ as default favicon to be used.
 The reasoning is, that using a vector format like SVG satisfies the most needs
 in parallel.
 
+For **backwards compatibility** redirect `/favicon.ico` to
+
+    /.well-known/icons/favicon.ico
+
+which will signal support for the standard to browsers.
+
 How does a client find icons? In order not to fish in muddy waters and send
 requests for potentially hundreds of matching icon names the standard demands
-a file `index.txt`, that is a plain-text list of supported icons.
+a file `index.txt`, that is a plain-text **list of supported icons**.
 
-Such a list for sysadmins can be compiled rather quickly by running the command
+Such a list can be compiled rather quickly by sysadmins by running the command
 
     find -L . -type f -printf '%P\n' > index.txt
 
