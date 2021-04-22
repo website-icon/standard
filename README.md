@@ -155,6 +155,7 @@ a discussion](https://github.com/website-icon/standard/discussions).
 | ---- | ------- |
 | ![](https://hyperform.js.org/.well-known/icons/icon-32.png) | hyperform.js.org ([`index.txt`](https://hyperform.js.org/.well-known/icons/index.txt)) |
 | ![](https://manuel-strehl.de/.well-known/icons/icon-32.png) | manuel-strehl.de ([`index.txt`](https://manuel-strehl.de/.well-known/icons/index.txt)) |
+| ![](https://www.kinetiqa.de/.well-known/icons/icon-32.png) | kinetiqa.de ([`index.txt`](https://www.kinetiqa.de/.well-known/icons/index.txt)) |
 
 Add your site: Open an issue or send a pull request with the link to your
 website and to the icon.
