@@ -386,15 +386,18 @@ on to the external icon server.
 * [RFC8615] Nottingham, M., “Well-Known Uniform Resource Identifiers (URIs)”,
     [RFC 8615](https://tools.ietf.org/html/rfc8615),
     May 2019.
-* [HTML 5 standard](https://html.spec.whatwg.org/)
+* [HTML] van Kesteren, A., Denicola, D., Hickson, I., Jägenstedt, P.,
+    Pieters, S., “[HTML standard](https://html.spec.whatwg.org/)”,
+    WHATWG, Living Standard.
 * [RFC5234] Crocker, D., Ed., Overell, P., “Augmented BNF for Syntax
     Specifications: ABNF”, [RFC 5234](https://tools.ietf.org/html/rfc5234),
     January 2008.
 * [RFC3987] Duerst, M., Suignard, M., “Internationalized Resource Identifiers
     (IRIs)”, [RFC 3987](https://tools.ietf.org/html/rfc3987), January 2005.
-* [Web Application Manifest Specification](https://www.w3.org/TR/appmanifest/)
 * [RFC8288] Nottingham, M., “Web Linking”, [RFC
     8288](https://tools.ietf.org/html/rfc8288), October 2017.
+* [WebApp] Cáceres, M. _et al._, “[Web Application Manifest Specification](https://www.w3.org/TR/appmanifest/)”,
+    W3C Working Draft, April 2021.
 
 ### Informative References
 
