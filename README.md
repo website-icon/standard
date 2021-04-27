@@ -73,11 +73,11 @@ as default favicon to be used.
 The reasoning is, that using a vector format like SVG satisfies the most needs
 in parallel.
 
-For **backwards compatibility** redirect `/favicon.ico` to
+For **backwards compatibility** a redirect from `/favicon.ico` to
 
     /.well-known/icons/favicon.ico
 
-which will signal support for the standard to browsers.
+will signal support for the standard to browsers.
 
 How does a client find icons? In order not to fish in muddy waters and send
 requests for potentially hundreds of matching icon names the standard demands
