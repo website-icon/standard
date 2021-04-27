@@ -92,8 +92,8 @@ in a shell in the `/.well-known/icons` folder (on systems, that understand the
 
 ## Quick start: How do I support the standard?
 
-If you have an existing `favicon.ico` file, all you need to do are three little
-things:
+If you have an existing `favicon.ico` file already live on your server, all you
+need to do are three quick things:
 
 1. Move the file:
 
