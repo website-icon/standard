@@ -167,15 +167,24 @@ it SHOULD assume that the server supports the website icon standard.
 
 ## Requirements for Conformity
 
-A server conforming to this specification MUST provide either a
+A **server** conforming to this specification MUST provide either a
 `favicon.svg` or a `favicon.ico` file and a file `index.txt` under the path
-`/.well-known/icons/`. The server MUST provide these files also for every icon
-set in use (i.e., sub-folders of `/.well-known/icons/`).
+`/.well-known/icons/`.
+The server MUST provide these files also for every icon set in use (i.e.,
+sub-folders of `/.well-known/icons/`).
+
+Lines in `index.txt` MUST NOT start with a U+002F slash.
 
 All other features of this specification are optional.
 
-A client conforming to this specification MUST adhere to the limits and orders
+A **client** conforming to this specification MUST adhere to the limits and orders
 specified in the auto-detection section above, if it opts into loading icons.
+
+It MUST ignore entries in `index.txt` that contain a U+002F slash anywhere.
+This includes in particular the icon selection, when a matching icon is found
+by its base name in a sub-folder of `/.well-known/icons/` but no matching icon
+set is requested.
+This icon MUST be ignored.
 
 ## Using Icons
 
